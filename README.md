@@ -14,3 +14,17 @@ Setting Config.ini file in folder Program
 Compile Project Adw
 
 [Run] Run the ass.exe application
+
+![alt Dasboard](https://github.com/Kep1ss/Delphi-POSAccounting/blob/main/image_2/Buku%20Besar.jpg?raw=true)
+
+![alt DivisionCapaity](https://github.com/Kep1ss/Delphi-POSAccountingC/blob/main/image_2/Data%20Jurnal%20memorial.jpg?raw=true)
+
+![alt GantChart](https://github.com/Kep1ss/Delphi-POSAccounting/blob/main/image_2/Laba%20Rugi.jpg?raw=true)
+
+![alt ProductionPlan](https://github.com/Kep1ss/Delphi-POSAccounting/blob/main/image_2/Master%20Akun.jpg?raw=true)
+
+![alt ProductionPlan](https://github.com/Kep1ss/Delphi-POSAccounting/blob/main/image_2/Mutasi%20Kas.jpg?raw=true)
+
+![alt ProductionPlan](https://github.com/Kep1ss/Delphi-POSAccounting/blob/main/image_2/Neraca%20Saldo.jpg?raw=true)
+
+![alt ProductionPlan](https://github.com/Kep1ss/Delphi-POSAccounting/blob/main/image_2/Pembyaaran%20Pajak.jpg?raw=true)
