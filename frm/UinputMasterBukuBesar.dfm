@@ -1,0 +1,637 @@
+object FinputMasterBukuBesar: TFinputMasterBukuBesar
+  Left = 0
+  Top = 0
+  Caption = 'Input Master Buku Besar'
+  ClientHeight = 474
+  ClientWidth = 695
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object dxbvl1: TdxBevel
+    Left = 0
+    Top = 0
+    Width = 695
+    Height = 33
+    Align = alTop
+    Shape = dxbsLineBottom
+    ExplicitLeft = -293
+    ExplicitWidth = 764
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 218
+    Height = 16
+    Caption = 'INPUT / EDIT MASTER BUKU BESAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object pg1: TcxPageControl
+    Left = 0
+    Top = 33
+    Width = 695
+    Height = 387
+    Align = alClient
+    TabOrder = 0
+    Properties.ActivePage = tb1
+    Properties.CustomButtons.Buttons = <>
+    OnPageChanging = pg1PageChanging
+    ExplicitWidth = 598
+    ClientRectBottom = 380
+    ClientRectLeft = 3
+    ClientRectRight = 688
+    ClientRectTop = 26
+    object tb1: TcxTabSheet
+      Caption = 'Master Akun'
+      ImageIndex = 0
+      object Label2: TLabel
+        Left = 6
+        Top = 16
+        Width = 76
+        Height = 13
+        Caption = 'No Master Akun'
+        Transparent = True
+      end
+      object Label3: TLabel
+        Left = 6
+        Top = 39
+        Width = 90
+        Height = 13
+        Caption = 'Nama Master Akun'
+        Transparent = True
+      end
+      object Label4: TLabel
+        Left = 6
+        Top = 61
+        Width = 24
+        Height = 13
+        Caption = 'Jenis'
+        Transparent = True
+      end
+      object Label5: TLabel
+        Left = 110
+        Top = 16
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label6: TLabel
+        Left = 110
+        Top = 39
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label7: TLabel
+        Left = 110
+        Top = 61
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object ENoMaster: TcxTextEdit
+        Left = 120
+        Top = 13
+        Enabled = False
+        TabOrder = 0
+        Width = 121
+      end
+      object ENamaMaster: TcxTextEdit
+        Left = 120
+        Top = 36
+        TabOrder = 1
+        Width = 121
+      end
+      object cbjenis: TcxComboBox
+        Left = 120
+        Top = 58
+        Properties.Items.Strings = (
+          'A [ Aktiva ]'
+          'P [ Pasiva ]')
+        Style.TransparentBorder = True
+        TabOrder = 2
+        Text = 'A [ Aktiva ]'
+        Width = 121
+      end
+      object cxGrid1: TcxGrid
+        Left = 3
+        Top = 85
+        Width = 679
+        Height = 266
+        TabOrder = 3
+        object cxGrid1DBTableView1: TcxGridDBTableView
+          Navigator.Buttons.CustomButtons = <>
+          DataController.DataSource = dm.DMasterAkun
+          DataController.Summary.DefaultGroupSummaryItems = <>
+          DataController.Summary.FooterSummaryItems = <>
+          DataController.Summary.SummaryGroups = <>
+          OptionsData.CancelOnExit = False
+          OptionsData.Deleting = False
+          OptionsData.DeletingConfirmation = False
+          OptionsData.Editing = False
+          OptionsData.Inserting = False
+          OptionsView.ColumnAutoWidth = True
+          OptionsView.GroupByBox = False
+          object cxGrid1DBTableView1nomasterakun: TcxGridDBColumn
+            Caption = 'Nomer Akun'
+            DataBinding.FieldName = 'nomasterakun'
+          end
+          object cxGrid1DBTableView1namamasterakun: TcxGridDBColumn
+            Caption = 'Nama Akun'
+            DataBinding.FieldName = 'namamasterakun'
+            Width = 120
+          end
+          object cxGrid1DBTableView1jenisakun: TcxGridDBColumn
+            Caption = 'Jenis Akun'
+            DataBinding.FieldName = 'jenisakun'
+            Width = 100
+          end
+        end
+        object cxGrid1Level1: TcxGridLevel
+          GridView = cxGrid1DBTableView1
+        end
+      end
+    end
+    object tb2: TcxTabSheet
+      Caption = 'Sub Master Akun'
+      ImageIndex = 1
+      object Label8: TLabel
+        Left = 6
+        Top = 16
+        Width = 60
+        Height = 13
+        Caption = 'Master Akun'
+        Transparent = True
+      end
+      object Label9: TLabel
+        Left = 110
+        Top = 16
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label10: TLabel
+        Left = 6
+        Top = 61
+        Width = 84
+        Height = 13
+        Caption = 'Nama Sub Master'
+        Transparent = True
+      end
+      object Label11: TLabel
+        Left = 6
+        Top = 39
+        Width = 70
+        Height = 13
+        Caption = 'No Sub Master'
+        Transparent = True
+      end
+      object Label12: TLabel
+        Left = 110
+        Top = 39
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label13: TLabel
+        Left = 110
+        Top = 61
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Enosub: TcxTextEdit
+        Left = 120
+        Top = 36
+        Enabled = False
+        TabOrder = 1
+        Width = 121
+      end
+      object cxGrid2: TcxGrid
+        Left = 3
+        Top = 85
+        Width = 679
+        Height = 266
+        TabOrder = 3
+        object cxGridDBTableView1: TcxGridDBTableView
+          Navigator.Buttons.CustomButtons = <>
+          DataController.DataSource = dm.DSubMasterAkun
+          DataController.Summary.DefaultGroupSummaryItems = <>
+          DataController.Summary.FooterSummaryItems = <>
+          DataController.Summary.SummaryGroups = <>
+          OptionsData.CancelOnExit = False
+          OptionsData.Deleting = False
+          OptionsData.DeletingConfirmation = False
+          OptionsData.Editing = False
+          OptionsData.Inserting = False
+          OptionsView.ColumnAutoWidth = True
+          OptionsView.GroupByBox = False
+          object cxGridDBTableView1nomasterakun: TcxGridDBColumn
+            Caption = 'No Master'
+            DataBinding.FieldName = 'nomasterakun'
+            Width = 100
+          end
+          object cxGridDBTableView1nosubmaster: TcxGridDBColumn
+            Caption = 'No Sub Master'
+            DataBinding.FieldName = 'nosubmaster'
+            Width = 100
+          end
+          object cxGridDBTableView1namasubmaster: TcxGridDBColumn
+            Caption = 'Nama Sub'
+            DataBinding.FieldName = 'namasubmaster'
+            Width = 150
+          end
+          object cxGridDBTableView1akunsubmaster: TcxGridDBColumn
+            Caption = 'No Akun Sub'
+            DataBinding.FieldName = 'akunsubmaster'
+            Width = 100
+          end
+        end
+        object cxGridLevel1: TcxGridLevel
+          GridView = cxGridDBTableView1
+        end
+      end
+      object cbMaster: TcxComboBox
+        Left = 120
+        Top = 13
+        Properties.OnChange = cbMasterPropertiesChange
+        TabOrder = 0
+        Width = 121
+      end
+      object ENamaSub: TcxTextEdit
+        Left = 120
+        Top = 58
+        TabOrder = 2
+        Width = 177
+      end
+    end
+    object tb3: TcxTabSheet
+      Caption = 'Akun Perkiraan'
+      ImageIndex = 2
+      ExplicitWidth = 588
+      object Label14: TLabel
+        Left = 6
+        Top = 16
+        Width = 81
+        Height = 13
+        Caption = 'Sub Master Akun'
+        Transparent = True
+      end
+      object Label15: TLabel
+        Left = 110
+        Top = 16
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label16: TLabel
+        Left = 110
+        Top = 61
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label17: TLabel
+        Left = 110
+        Top = 39
+        Width = 4
+        Height = 13
+        Caption = ':'
+        Transparent = True
+      end
+      object Label18: TLabel
+        Left = 6
+        Top = 39
+        Width = 51
+        Height = 13
+        Caption = 'Kode Akun'
+        Transparent = True
+      end
+      object Label19: TLabel
+        Left = 6
+        Top = 61
+        Width = 102
+        Height = 13
+        Caption = 'Nama Akun Perkiraan'
+        Transparent = True
+      end
+      object cbsubmaster: TcxComboBox
+        Left = 120
+        Top = 13
+        Properties.OnChange = cbsubmasterPropertiesChange
+        TabOrder = 0
+        Width = 121
+      end
+      object EkodeAkun: TcxTextEdit
+        Left = 120
+        Top = 36
+        Enabled = False
+        TabOrder = 1
+        Width = 121
+      end
+      object Enamaakun: TcxTextEdit
+        Left = 120
+        Top = 58
+        TabOrder = 2
+        Width = 177
+      end
+      object cxGrid3: TcxGrid
+        Left = 3
+        Top = 85
+        Width = 679
+        Height = 266
+        TabOrder = 3
+        object cxGridDBTableView2: TcxGridDBTableView
+          Navigator.Buttons.CustomButtons = <>
+          DataController.DataSource = dm.DMasterAkunPerkiraan
+          DataController.Summary.DefaultGroupSummaryItems = <>
+          DataController.Summary.FooterSummaryItems = <>
+          DataController.Summary.SummaryGroups = <>
+          OptionsData.CancelOnExit = False
+          OptionsData.Deleting = False
+          OptionsData.DeletingConfirmation = False
+          OptionsData.Editing = False
+          OptionsData.Inserting = False
+          OptionsView.ColumnAutoWidth = True
+          OptionsView.GroupByBox = False
+          object cxGridDBTableView2kodeakunperkiraan: TcxGridDBColumn
+            Caption = 'Kode Akun'
+            DataBinding.FieldName = 'kodeakunperkiraan'
+          end
+          object cxGridDBTableView2namaakunperkiraan: TcxGridDBColumn
+            Caption = 'Nama Perkiraan'
+            DataBinding.FieldName = 'namaakunperkiraan'
+            Width = 150
+          end
+          object cxGridDBTableView2akunsubmaster: TcxGridDBColumn
+            Caption = 'No Akun Sub'
+            DataBinding.FieldName = 'akunsubmaster'
+            Width = 100
+          end
+        end
+        object cxGridLevel2: TcxGridLevel
+          GridView = cxGridDBTableView2
+        end
+      end
+    end
+  end
+  object G1: TcxGroupBox
+    Left = 0
+    Top = 420
+    Align = alBottom
+    TabOrder = 1
+    ExplicitWidth = 598
+    DesignSize = (
+      695
+      54)
+    Height = 54
+    Width = 695
+    object btnBaru: TcxButton
+      Left = 5
+      Top = 11
+      Width = 91
+      Height = 26
+      Anchors = [akLeft, akTop, akBottom]
+      Caption = 'Baru'
+      OptionsImage.Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000000000000000000000000000000000000000000000000
+        0000000000020000000A170D0738542D1894814626D193502AEA924F2AE87F45
+        25D0522C17931209053000000009000000010000000000000000000000000000
+        00030201011159311B97A96239FAC58957FFD6A36DFFDDAF75FFDDAF74FFD6A4
+        6BFFC58956FFA46137F53C2112730000000F0000000300000000000000020201
+        0110744226B9BC7C4DFFDDAE77FFDEB076FFE2B782FFE3BB87FFE3BC86FFE1B7
+        82FFDEAF74FFDBAB72FFBD7E4EFF6F3E24B50000001000000002000000085C36
+        2095BE8053FFE0B37CFFDFB076FFDEB177FFB78254FFAA7144FFAB7245FFBC88
+        59FFDFB279FFDFB277FFDEB077FFC08253FF55321D920000000A190F0932B070
+        47FADFB27DFFDFB27AFFE0B37BFFE0B57DFFA56B3FFFF5EFEAFFF8F3EEFFAB72
+        45FFE2B67EFFE0B47CFFE0B47BFFDEB079FFB3734AFB130B072F613C2795CD9B
+        6FFFE2B780FFE5BD89FFE7C291FFE8C393FFA56B3FFFF1E6DEFFF9F5F1FFAA71
+        44FFE8C494FFE8C393FFE5BF8CFFE1B77FFFD09C6EFF5434218B935E3DD2DCB3
+        83FFE3B781FFBA8659FFA97043FFAB7245FFAC7346FFF5EDE6FFFAF6F3FFAD75
+        47FFB0784AFFB17A4BFFC29162FFE4B983FFDEB17EFF8E5B3BD0B0744CF2E3BF
+        8FFFE4BB84FFA56B3FFFF3EBE6FFFAF6F3FFF6EFE8FFF7F0EAFFFBF7F5FFFAF7
+        F4FFFAF7F3FFFAF6F2FFAB7245FFE5BD87FFE5BE8BFFAB714CEEAE764FECE9C9
+        A0FFE5BE89FFA56B3FFFE0D2CAFFE1D3CCFFE3D5CFFFF2EAE4FFF8F3EFFFEADF
+        D9FFE6DAD4FFE9DED9FFAA7144FFE7C08CFFEACA9DFFAE764FEE9A6A49D0E9CD
+        ACFFEAC796FFB78456FFA56B3FFFA56B3FFFA56B3FFFF1EAE5FFFAF6F3FFA56B
+        3FFFA56B3FFFA56B3FFFB78457FFEACA99FFEBD1ADFF996A49D46E4E3697DDBB
+        9DFFEED3A9FFEECFA2FFEED2A5FFF0D6A9FFA56B3FFFF0EAE7FFFDFCFBFFA56B
+        3FFFF1D6AAFFF0D5A8FFEED2A5FFEFD4A7FFE0C2A2FF6246318F1C140E2BC794
+        6CFCF5E8CCFFEFD6ABFFF1D8AEFFF2DAB0FFA56B3FFFDECFC9FFDFD1CBFFA56B
+        3FFFF3DCB2FFF1DBB0FFF1D8ADFFF7EACDFFC69470FA1A120D2E000000036F52
+        3C92D7B08CFFF8EFD3FFF3E0B9FFF3DFB7FFB98A5FFFA56B3FFFA56B3FFFBA8A
+        5FFFF4E1B9FFF4E2BDFFFAF1D5FFD9B390FF664B368C00000006000000010202
+        0107906C4EB8D9B38FFFF7EDD3FFF8EED0FFF7EBC9FFF6E8C4FFF6E8C5FFF7EC
+        CAFFF8EED0FFF4E8CDFFD7AF8BFF88664AB30202010B00000001000000000000
+        00010202010770543F8FCFA078FCE2C4A2FFEBD7B8FFF4E9CDFFF4EACEFFECD8
+        B9FFE3C5A3FFC59973F24C392A67000000060000000100000000000000000000
+        000000000001000000022019122C6C543E89A47E5FCCC59770F1C19570EEA47E
+        60CD6C543F8B16110D2200000003000000010000000000000000}
+      TabOrder = 0
+      OnClick = btnBaruClick
+    end
+    object btnUbah: TcxButton
+      Left = 192
+      Top = 11
+      Width = 91
+      Height = 26
+      Anchors = [akLeft, akTop, akBottom]
+      Caption = 'Ubah'
+      OptionsImage.Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000040000000F000000110000
+        000B000000040000000100000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000E431B10FF31130BE1190A
+        0598030407420000000C00000002000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000D673C29DCB8C7D2FF7789
+        A3FF224084FF040F34960000000F000000020000000000000000000000000000
+        0000000000000000000000000000000000000000000841261A91869AB3FFC7E3
+        F6FF1B65B9FF286BABFF041237950000000E0000000200000000000000000000
+        000000000000000000000000000000000000000000031013163E458BC6FFDDFE
+        FDFF4DB4E6FF1B67BAFF2E73B1FF051439940000000D00000002000000000000
+        00000000000000000000000000000000000000000001000000081B44628D439F
+        D5FFDDFEFDFF55C0ECFF1D6ABCFF337BB6FF06163B920000000CA5A5A5A7A1A1
+        A1A9A1A1A1A9A5A5A5A74C4C4C4DBBBBBBC0B8B8B8C1B8B8B8C1B1B1B1C46D96
+        B5E348A5D8FFDDFEFDFF5DCBF2FF206EBFFF3883BCFF07193E90A1A1A1A8744E
+        42F7744E42F7B8B8B8C18989898E94847EDC6A4132FF978883D86A4032FF7457
+        4DF04F6981FC4BABDAFFDDFEFDFF64D5F7FF2474C1FF3C8BC1FFA2A2A2A89275
+        6BE86E4332FFA6A19ECCB2B2B2C38C695CF0734737FFAAA7A6C97B4E3EFF7D51
+        3FFF917C76E259758FF64EAFDDFFDDFEFDFF6BDEFBFF287AC5FF72727275A79A
+        95D3744534FF704232FF7E4F3CFF845342FF7C584BF4B2B2B2C4835342FF8563
+        56F0B5B5B5C2ABA8A6C853667DFF51B2DFFFDDFEFDFF4CA7D7FF33333334B5B1
+        B0C6895541FF8F6556F49A8279E182513EFF8E756CE3B5B5B5C27F4F3DFF7F5D
+        52F0B7B7B7C2B1AEACC77B4E3CFF58728AF8327FBFFF163A5A860D0D0D0DBBBB
+        BBC1916A5BEF855848F79F8A82DC804D3AFFA49792D2B8B8B8C284503DFF7443
+        32FF947E76E0937366EC7F4E3DFF927D75DF8888889000000003000000008A8A
+        8A8DA2887EDF824C37FF956D5DF0804F3DFBBABABAC1BABABAC18B5540FF8558
+        48F78C6253F38C5C48FB916F62EBBBBBBBC15959595A00000000000000005959
+        595AB0A5A1CD8B533CFF8E5740FF8B6154EFAFAFAFB3BBBBBBC18A543FFF926A
+        5CEFACACACB5AFAFAFB4AFAFAFB37F7F7F800000000000000000000000002626
+        2626BCBCBCC0966450F78B523BFFA18A83DA8B8B8B8DBCBCBCC08B513DFF8C63
+        54EF8A8A8A8D0000000000000000000000000000000000000000000000000000
+        0000A5A5A5A6BDBDBDC0BDBDBDC0BEBEBEC04C4C4C4CBEBEBEBFBDBDBDC0BDBD
+        BDC08B8B8B8C0000000000000000000000000000000000000000}
+      TabOrder = 2
+      OnClick = btnUbahClick
+    end
+    object btnHapus: TcxButton
+      Left = 286
+      Top = 11
+      Width = 91
+      Height = 26
+      Anchors = [akLeft, akTop, akBottom]
+      Caption = 'Hapus'
+      OptionsImage.Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00020000000900000012000000180000001A0000001A00000018000000100000
+        0005000000010000000000000000000000000000000000000000000000020000
+        000D3524146A936338E5A56B3AFFA36938FFA16736FF9D6233FB633E20B70805
+        022800000006000000010000000000000000000000000000000000000008442F
+        1D78C18B59FEE1AC76FFE4C296FFB5793BFFB5793CFFB5793CFFAD7239FF7E50
+        2AD80302042A00000006000000010000000000000000000000000000000DB07D
+        4EF3E6B17AFFE9B47DFFE9B47DFFE7C79DFFB67A3DFFB57A3DFFB57A3DFF6953
+        7BFF090E5ED50001052800000006000000010000000000000000000000086A4E
+        329DEFD7B3FFE9B47DFFE9B47DFFE9B47DFFEACDA4FFB57B3EFF735C86FF313F
+        CCFF2935B8FF0B1161D501010627000000050000000100000000000000010000
+        000C745538A5F2DDBBFFE9B47DFFE9B47DFFE9B47DFFD1CEE1FF3443CEFF3443
+        CDFF3443CEFF2C39BAFF0D1463D4010106260000000500000001000000000000
+        00020000000B76583BA4F5E2C1FFE9B47DFFB5A9B8FF829FF1FFB1C9F5FF3949
+        D1FF3A4AD1FF3A49D1FF303FBDFF111767D30101062500000005000000000000
+        0000000000010000000B785B3DA3E9E1D2FF87A3F2FF87A4F1FF87A3F2FFB9D0
+        F7FF3E50D5FF3E50D5FF3F50D5FF3545C2FF141B6AD201010622000000000000
+        000000000000000000010000000A2C386FA2C9E2F9FF8CA8F3FF8DA8F3FF8CA8
+        F3FFC0D8F9FF4457D9FF4356D9FF4456D9FF3949C2FF141A61C2000000000000
+        000000000000000000000000000100000009303D74A1CFE7FBFF92ADF3FF91AD
+        F4FF92ADF4FFC6DEFAFF495EDBFF495DDCFF475AD7FF232F8BF0000000000000
+        00000000000000000000000000000000000100000008334177A0D4ECFCFF97B2
+        F5FF97B2F4FF97B3F5FFCCE4FBFF4A5FDAFF3141A4F6090C214A000000000000
+        000000000000000000000000000000000000000000010000000736457A9FD8F0
+        FDFF9DB7F5FF9CB7F5FFD9F1FEFF6B81CAF50B0E234700000006000000000000
+        0000000000000000000000000000000000000000000000000001000000063947
+        7D9EDBF3FEFFDBF3FFFF677FCFF513192C440000000500000001000000000000
+        0000000000000000000000000000000000000000000000000000000000010000
+        00053543728E4F63AACD151A2D40000000040000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0001000000030000000400000002000000000000000000000000}
+      TabOrder = 3
+      OnClick = btnHapusClick
+    end
+    object btnTutup: TcxButton
+      Left = 380
+      Top = 11
+      Width = 91
+      Height = 26
+      Anchors = [akLeft, akTop, akBottom]
+      Caption = 'Tutup'
+      OptionsImage.Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000000000000000000000000000000000000000000030000
+        000B000000120000001300000013000000140000001400000014000000140000
+        0014000000140000001500000015000000140000000D000000030000000B1C11
+        6CC3261796FF271696FF261695FF261594FF251594FF251594FF241394FF2412
+        93FF241292FF231292FF231192FF231191FF190C68C50000000C0000000F2B1C
+        9BFF384AD3FF2637CEFF3042D2FF4254D9FF3646D4FF2437CCFF2434CCFF3444
+        D3FF3C4ED6FF2A3ACEFF202FC9FF1E2CC9FF251595FF000000120000000F3121
+        A0FF4356D7FF374BD5FF3F4BCBFF2827ABFF363CBEFF3E4FD6FF3D4ED5FF353A
+        BEFF2827ABFF3B45C9FF2F41D0FF2332CCFF291A99FF000000120000000E3529
+        A5FF4E62DBFF444FCCFF605DBDFFEDEDF8FF8B89CEFF383CBCFF383CBBFF8B89
+        CEFFEDEDF8FF5F5DBDFF3D47C9FF293ACEFF2D1F9EFF000000110000000D392F
+        ABFF596FDFFF2722A5FFECE7ECFFF5EBE4FFF8F2EEFF9491D1FF9491D1FFF8F1
+        EDFFF3E9E2FFECE6EBFF2721A5FF2F42D1FF3326A3FF0000000F0000000C4036
+        B1FF657AE2FF3135B7FF8070ADFFEBDBD3FFF4EAE4FFF7F2EDFFF8F1EDFFF4E9
+        E2FFEADAD1FF7F6FACFF2E31B6FF3549D5FF372CA9FF0000000E0000000B453D
+        B6FF6E83E5FF485EDCFF393BB7FF8A7FB9FFF6ECE7FFF5ECE6FFF4EBE5FFF6EB
+        E5FF897DB8FF3739B6FF4054D9FF3D51D7FF3C33AFFF0000000D0000000A4A44
+        BCFF788FE8FF6077E3FF4B4BBBFF9189C7FFF7EFE9FFF6EEE9FFF6EFE8FFF7ED
+        E8FF9087C5FF4949BAFF596FDFFF4359DAFF423AB4FF0000000C00000009504C
+        C2FF92A7EEFF5655BCFF8F89CAFFFBF6F4FFF7F1ECFFEDE1D9FFEDE0D9FFF7F0
+        EAFFFAF5F2FF8F89CAFF5453BCFF6278E2FF4943B9FF0000000B000000086B6A
+        D0FFADC1F4FF2A1E9BFFE5DADEFFF6EEEBFFEDDFDAFF816EA9FF816EA9FFEDDF
+        D8FFF4ECE7FFE5D9DCFF2A1D9BFF8B9EEBFF6563C9FF0000000A000000077577
+        D6FFB1C6F5FF6E77D1FF5747A1FFCCB6BCFF7A68A8FF4E4CB7FF4F4EB8FF7A68
+        A8FFCBB5BCFF5746A1FF6B75D0FF8EA1ECFF706ED0FF0000000900000006797B
+        DAFFB5CAF6FF93A7EEFF7079D2FF2E229BFF5453BBFF93A7EEFF93A7EEFF5555
+        BCFF2E219BFF6F77D1FF91A4EDFF90A3EDFF7475D4FF00000008000000057D80
+        DEFFB9CDF6FFB9CDF6FFB9CCF6FFB9CCF6FFB9CDF6FFB8CCF6FFB8CCF6FFB7CC
+        F6FFB7CBF6FFB6CBF6FFB5C9F6FFB5C9F6FF787AD8FF00000006000000036062
+        A6C08184E1FF8183E0FF8083E0FF7F83DFFF7F83DFFF7F82DFFF7E81DFFF7E81
+        DEFF7D81DEFF7D80DEFF7D7FDEFF7C7FDDFF5C5EA3C100000004000000000000
+        0002000000030000000400000004000000040000000400000004000000040000
+        0004000000040000000400000005000000050000000300000001}
+      TabOrder = 4
+      OnClick = btnTutupClick
+    end
+    object btnSimpan: TcxButton
+      Left = 98
+      Top = 11
+      Width = 91
+      Height = 26
+      Anchors = [akLeft, akTop, akBottom]
+      Caption = 'Simpan'
+      OptionsImage.Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000000000000000000000000000000000000000000000000
+        00000000000000000002000000070000000C0000001000000012000000110000
+        000E000000080000000200000000000000000000000000000000000000000000
+        000100000004000101120D2A1D79184E36C6216B4BFF216B4BFF216C4BFF1A53
+        3AD20F2F21840001011500000005000000010000000000000000000000000000
+        0005050F0A351C5B40DC24805CFF29AC7EFF2CC592FF2DC894FF2DC693FF2AAE
+        80FF258560FF1A563DD405110C3D00000007000000010000000000000003040E
+        0A31206548ED299D74FF2FC896FF2EC996FF56D4ACFF68DAB5FF3BCD9DFF30C9
+        96FF32CA99FF2BA479FF227050F805110C3D00000005000000000000000A1A57
+        3DD02EA57CFF33CA99FF2EC896FF4CD2A8FF20835CFF00673BFF45BE96FF31CB
+        99FF31CB98FF34CC9CFF31AD83FF1B5C41D300010113000000020B23185E2E8A
+        66FF3BCD9EFF30CA97FF4BD3A9FF349571FF87AF9DFFB1CFC1FF238A60FF45D3
+        A8FF36CF9FFF33CD9BFF3ED0A3FF319470FF0F32237F00000007184D37B63DB3
+        8CFF39CD9FFF4BD5A9FF43A382FF699782FFF8F1EEFFF9F3EEFF357F5DFF56C4
+        A1FF43D5A8FF3ED3A4FF3CD1A4FF41BC95FF1B5C43CD0000000B1C6446DF4BCA
+        A4FF44D2A8FF4FB392FF4E826AFFF0E9E6FFC0C3B5FFEFE3DDFFCEDDD4FF1B75
+        4FFF60DCB8FF48D8ACFF47D6AAFF51D4ACFF247A58F80000000E217050F266D9
+        B8FF46D3A8FF0B6741FFD2D2CBFF6A8F77FF116B43FF73967EFFF1E8E3FF72A2
+        8BFF46A685FF5EDFBAFF4CD9AFFF6BE2C2FF278460FF020604191E684ADC78D9
+        BEFF52DAB1FF3DBA92FF096941FF2F9C76FF57DEB8FF2D9973FF73967EFFF0EA
+        E7FF4F886CFF5ABB9AFF5BDEB9FF7FE2C7FF27835FF80000000C19523BAB77C8
+        B0FF62E0BCFF56DDB7FF59DFBAFF5CE1BDFF5EE2BEFF5FE4C1FF288C67FF698E
+        76FFE6E1DCFF176B47FF5FD8B4FF83D5BDFF1E674CC60000000909201747439C
+        7BFF95ECD6FF5ADFBAFF5EE2BDFF61E4BFFF64E6C1FF67E6C5FF67E8C7FF39A1
+        7EFF1F6D4AFF288B64FF98EFD9FF4DAC8CFF1036286D00000004000000041C5F
+        46B578C6ADFF9AEED9FF65E5C0FF64E7C3FF69E7C6FF6BE8C8FF6CE9C9FF6BEA
+        C9FF5ED6B6FF97EDD7FF86D3BBFF237759D20102010C0000000100000001030A
+        0718247B5BDA70C1A8FFB5F2E3FF98F0DAFF85EDD4FF75EBCEFF88EFD6FF9CF2
+        DDFFBAF4E7FF78CDB3FF2A906DEA0615102E0000000200000000000000000000
+        0001030A07171E694FB844AB87FF85D2BBFFA8E6D6FFC5F4EBFFABE9D8FF89D8
+        C1FF4BB692FF237F60CB05130E27000000030000000000000000000000000000
+        000000000001000000030A241B411B60489D258464CF2C9D77EE258867CF1F71
+        56B00E3226560000000600000002000000000000000000000000}
+      TabOrder = 1
+      OnClick = btnSimpanClick
+    end
+  end
+end

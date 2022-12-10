@@ -1,0 +1,666 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{8D745BB3-44AC-408A-ADA9-E2078CFA77DC}</ProjectGuid>
+			<ProjectVersion>18.8</ProjectVersion>
+			<FrameworkType>VCL</FrameworkType>
+			<MainSource>ass.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Application</AppType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+			<Cfg_1_Win32>true</Cfg_1_Win32>
+			<CfgParent>Cfg_1</CfgParent>
+			<Cfg_1>true</Cfg_1>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+			<Cfg_2_Win32>true</Cfg_2_Win32>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<Manifest_File>None</Manifest_File>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=6.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<VerInfo_Locale>1057</VerInfo_Locale>
+			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+			<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+			<DCC_UsePackage>DBXInterBaseDriver;DataSnapServer;DataSnapCommon;DbxCommonDriver;dbxcds;dsnap;IndyCore;CloudService;IPIndyImpl;bindcompfmx;mydac160;dbrtl;bindcomp;inetdb;xmlrtl;ibxpress;soaprtl;bindengine;DBXInformixDriver;DBXFirebirdDriver;inet;DBXSybaseASADriver;dbexpress;fmx;IndySystem;DataSnapClient;dacfmx160;DataSnapProviderClient;dac160;DBXOracleDriver;fmxase;inetdbxpress;rtl;DbxClientDriver;IndyProtocols;DBXMySQLDriver;fmxobj;fmxdae;DataSnapIndy10ServerTransport;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+			<DCC_ExeOutput>D:\PROJECT DELPHI\Cashey POS v8 Ribbon -Pro\</DCC_ExeOutput>
+			<SanitizedProjectName>ass</SanitizedProjectName>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<DCC_UsePackage>fsADO16;dxTileControlRS16;cxLibraryRS16;dxSkinSevenRS16;RaizeComponentsVcl;dxPsPrVwAdvRS16;dxRibbonCustomizationFormRS16;dxPSCoreRS16;cxPivotGridOLAPRS16;dxSkinSummer2008RS16;dxPScxGridLnkRS16;acntDelphiXE2_R;dxPScxTLLnkRS16;cxPageControlRS16;dxPSdxSpreadSheetLnkRS16;frxBDE16;fsIBX16;dxSkinVS2010RS16;vclimg;dxSkinDevExpressStyleRS16;dxSkinWhiteprintRS16;fmi;dxComnRS16;vcldb;dxSkinBlackRS16;dxADOServerModeRS16;dxBarExtDBItemsRS16;dxSkinXmas2008BlueRS16;dxSkinOffice2007BlueRS16;AlphaDBDelphiXE2;dxSkinOffice2007GreenRS16;FmxTeeUI;cxDataRS16;dxSkinMetropolisRS16;dxDockingRS16;dxPSDBTeeChartRS16;tmsexdxe2;dxPSLnksRS16;dxBarExtItemsRS16;EhLibDBXDataDrivers160;dxPSTeeChartRS16;dxPSdxLCLnkRS16;cxVerticalGridRS16;dxSkinSharpRS16;mydacvcl160;dxSkinOffice2007BlackRS16;dxorgcRS16;dxSkinBlueprintRS16;dxWizardControlRS16;dxPScxExtCommonRS16;vcldbx;dxNavBarRS16;DBXOdbcDriver;dxdbtrRS16;dxSkinFoggyRS16;fsBDE16;frxDB16;intrawebdb_120_160;dxSkinDarkSideRS16;dxSkinscxPCPainterRS16;fs16;vclactnband;FMXTee;dxPScxSchedulerLnkRS16;dxServerModeRS16;bindcompvcl;dxPSdxDBTVLnkRS16;vclie;dacvcl160;dxSkinSilverRS16;dsnapcon;dxHttpIndyRequestRS16;dxSkinOffice2013WhiteRS16;dxSkinLilianRS16;vclx;dxSkinValentineRS16;dxFlowChartRS16;frxIBX16;dxGDIPlusRS16;dxSkinSharpPlusRS16;dxdborRS16;dxSkinVisualStudio2013LightRS16;dxPScxVGridLnkRS16;dxPSdxMapControlLnkRS16;dxLayoutControlRS16;dxSpreadSheetRS16;dxPScxPivotGridLnkRS16;dxCoreRS16;cxExportRS16;EhLibIBXDataDrivers160;dxBarRS16;dxSkinsdxNavBarPainterRS16;EhLibBDEDataDrivers160;dxSkinOffice2016DarkRS16;dxSkinCoffeeRS16;cxTreeListdxBarPopupMenuRS16;TeeDB;dxDBXServerModeRS16;dxPSdxGaugeControlLnkRS16;frxTee16;Rave100VCL;vclib;inetdbbde;dxSkinOffice2013DarkGrayRS16;dxRibbonRS16;DBXSybaseASEDriver;dxSpreadSheetConditionalFormattingDialogsRS16;cxTreeListRS16;dxSkinOffice2016ColorfulRS16;dxSkinOffice2007SilverRS16;dxSkinsdxRibbonPainterRS16;mysqlmon160;vcldsnap;JPRINT_TOKYO102;dxGaugeControlRS16;DBXDb2Driver;Intraweb_120_160;dxSkinBlueRS16;frxADO16;vclribbon;dxSkinDarkRoomRS16;frxe16;dxSkinscxSchedulerPainterRS16;vcl;dxSkinDevExpressDarkStyleRS16;DBXMSSQLDriver;CodeSiteExpressPkg;fsTee16;dxSkinVisualStudio2013BlueRS16;tmsdxe2;cxSchedulerGridRS16;webdsnap;dxtrmdRS16;dxSkinsdxDLPainterRS16;EhLib160;dxSkinTheAsphaltWorldRS16;dxSkinOffice2010BlackRS16;dxSkinMoneyTwinsRS16;dxSkinPumpkinRS16;adortl;EhLibADODataDrivers160;dxSkinHighContrastRS16;frxDBX16;dxSkinOffice2013LightGrayRS16;dxSkiniMaginaryRS16;RaizeComponentsVclDb;frx16;dxSkinLondonLiquidSkyRS16;dxPSdxDBOCLnkRS16;dxSkinsdxBarPainterRS16;crcontrols160;Tee;dxSkinGlassOceansRS16;dxSkinLiquidSkyRS16;dxSkinsCoreRS16;svnui;cxPivotGridChartRS16;dxPScxCommonRS16;dxmdsRS16;dxPSPrVwRibbonRS16;dxSpellCheckerRS16;cxGridRS16;dxMapControlRS16;cxEditorsRS16;TeeUI;cxPivotGridRS16;dxSkinSevenClassicRS16;cxSchedulerRibbonStyleEventEditorRS16;cxSchedulerRS16;tmsxlsdxe2;vcltouch;dxSkinOffice2010SilverRS16;websnap;dxSkinOffice2007PinkRS16;mydacfmx160;VclSmp;dxSkinSpringTimeRS16;dxTabbedMDIRS16;fsDB16;DataSnapConnectors;dxSkinVisualStudio2013DarkRS16;dxSkinStardustRS16;dxSkinMetropolisDarkRS16;dxPSdxOCLnkRS16;dxSkinOffice2010BlueRS16;dxPSdxFCLnkRS16;dxThemeRS16;dxPScxPCProdRS16;tmswizdxe2;svn;dxSkinCaramelRS16;bdertl;dxSkinMcSkinRS16;dxBarDBNavRS16;$(DCC_UsePackage)</DCC_UsePackage>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+			<AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+			<UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
+			<UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<DCC_RemoteDebug>true</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+			<VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<DCC_RemoteDebug>false</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+			<VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+			<DCC_ExeOutput>D:\PROJECT DELPHI\Cashey POS v8 Ribbon -Pro\</DCC_ExeOutput>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+			<Icon_MainIcon>ass_Icon.ico</Icon_MainIcon>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
+			<BT_BuildType>Debug</BT_BuildType>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="frm\uMainMenu.pas">
+				<Form>Fmain</Form>
+			</DCCReference>
+			<DCCReference Include="ctrl\uComCtrl.pas"/>
+			<DCCReference Include="ctrl\uctrlFrm.pas"/>
+			<DCCReference Include="ctrl\uEngine.pas"/>
+			<DCCReference Include="ctrl\uOvEdit.pas"/>
+			<DCCReference Include="ctrl\uTerbilang.pas"/>
+			<DCCReference Include="frm\uDataKomputerKasir.pas">
+				<Form>FdataMasterKomputer</Form>
+			</DCCReference>
+			<DCCReference Include="frm\udm.pas">
+				<Form>dm</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frm\uSetingDatabase.pas">
+				<Form>FsettingDatabase</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputJenisPelanggan.pas">
+				<Form>FinputJenisPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\Uprofile.pas">
+				<Form>Fprofile</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uMasterBukuBesar.pas">
+				<Form>FmasterBukubesar</Form>
+			</DCCReference>
+			<DCCReference Include="frm\UinputMasterBukuBesar.pas">
+				<Form>FinputMasterBukuBesar</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataBarang.pas">
+				<Form>Fdatabarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputDataBarang.pas">
+				<Form>FinputBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataVoucher.pas">
+				<Form>FDataVoucher</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uinputvoucher.pas">
+				<Form>FinputVoucher</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataKategori.pas">
+				<Form>FDataKategori</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputKategori.pas">
+				<Form>FinputKategori</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataLokasi.pas">
+				<Form>FdataLokasi</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputLokasi.pas">
+				<Form>FinputLokasi</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputSales.pas">
+				<Form>FinputSales</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataSales.pas">
+				<Form>FdataSales</Form>
+			</DCCReference>
+			<DCCReference Include="frm\udataPelanggan.pas">
+				<Form>FdataPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputPelanggan.pas">
+				<Form>FinputPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSalesOrder.pas">
+				<Form>FsalesOrder</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariBarang.pas">
+				<Form>FcariBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariPelanggan.pas">
+				<Form>FcariPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLaporanFIFO.pas">
+				<Form>FLaporanFIFO</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDtrx.pas">
+				<Form>dtrx</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frm\uReturPenjualan.pas">
+				<Form>FreturPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataMutasiBarang.pas">
+				<Form>FdataMutasiBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataReturPenjualan.pas">
+				<Form>FdataReturPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPembelian.pas">
+				<Form>FdataPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataReturPembelian.pas">
+				<Form>FdataReturPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uReturBeliNew.pas">
+				<Form>Freturbelinew</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariSales.pas">
+				<Form>FcariSales</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataHutang.pas">
+				<Form>FdataHutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPiutang.pas">
+				<Form>FdataPiutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uBayarTitip.pas">
+				<Form>FbayarPiutangTitip</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uBayarHutang.pas">
+				<Form>FbayarHutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uStokOpname.pas">
+				<Form>FStokOpname</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uMutasiBarang.pas">
+				<Form>FMutasiBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uStokAwalBulan.pas">
+				<Form>FprosesStokAwal</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uUbahHarga.pas">
+				<Form>FubahHargaBeli</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLaporanBarang.pas">
+				<Form>FlaporanBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDlaporan.pas">
+				<Form>Dlaporan</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="frm\uPrintBrosurBarang.pas">
+				<Form>FDesignBrosurBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uJurnalMemorial.pas">
+				<Form>FJurnalMemorial</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uTransaksiJurnalMemorial.pas">
+				<Form>FtransaksiJurnal</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uTransaksiPengeluaranBiaya.pas">
+				<Form>FtransaksiPengeluaranBiaya</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPengeluaranBiaya.pas">
+				<Form>FpengeluaranBiaya</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariAkun.pas">
+				<Form>FcariAkun</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPiutang.pas">
+				<Form>FlapPiutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPembelian.pas">
+				<Form>FlapPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\UcetakBarcode.pas">
+				<Form>FcetakBarcode</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSetingLimitasi.pas">
+				<Form>FsetingLImitasi</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLogin.pas">
+				<Form>Flogin</Form>
+			</DCCReference>
+			<DCCReference Include="frm\UPOPembelian.pas">
+				<Form>ForderPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariDataStokOpname.pas">
+				<Form>FCariDataStokOpname</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataTransaksiStokOpname.pas">
+				<Form>FdataStokOpname</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariPenjualanCabang.pas">
+				<Form>FCariPenjualanCabang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataOrderPembelian.pas">
+				<Form>FdataOrderPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPenerimaanBarang.pas">
+				<Form>FDataPenerimaanBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataSalesOrder.pas">
+				<Form>FdataSalesOrder</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPasswordAdmin.pas">
+				<Form>FpasswordAdmin</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapReturPembelian.pas">
+				<Form>FlapReturPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLaporanHutang.pas">
+				<Form>FlapHutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPenjualan.pas">
+				<Form>FlapPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapReturPenjualan.pas">
+				<Form>FlapReturPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uFormDashBoard.pas">
+				<Form>FFormDashBoard</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputKomputer.pas">
+				<Form>FinputKomputer</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataSatuan.pas">
+				<Form>FdataSatuan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputSatuan.pas">
+				<Form>FinputSatuan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCopyNota.pas">
+				<Form>FCopyNota</Form>
+			</DCCReference>
+			<DCCReference Include="frm\upendingsalesorder.pas">
+				<Form>FpendingSO</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPilihSatuan.pas">
+				<Form>FpilihSatuan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataUser.pas">
+				<Form>FDataUser</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputUser.pas">
+				<Form>FInputUser</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uHistoryPenukaranPoin.pas">
+				<Form>FhistoryPenukaranPoin</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputSupplier.pas">
+				<Form>Finputsupplier</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uReturPenjualannew.pas">
+				<Form>FreturJualNew</Form>
+			</DCCReference>
+			<DCCReference Include="frm\ucariSalesOrder.pas">
+				<Form>FcariSalesOrder</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataStokBarang.pas">
+				<Form>FdataStokBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPendingTransaksi.pas">
+				<Form>FpendingTransaksi</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataSuratJalan.pas">
+				<Form>FdataSuratJalan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uProgress.pas">
+				<Form>FLoading</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariSupplier.pas">
+				<Form>FcariSupplier</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPoPembelianBarangBaru.pas">
+				<Form>FpoPembelianBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSuratJalan.pas">
+				<Form>FSuratJalan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPembayaranPiutangNew.pas">
+				<Form>FbayarPiutangNew</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPembayaranHutangNew.pas">
+				<Form>FpembayaranHutangNew</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLph.pas">
+				<Form>FLPH</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapNeraca.pas">
+				<Form>FlapNeraca</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLaporanLabaRugi.pas">
+				<Form>FlapLabaRugi</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapJurnalTransaksi.pas">
+				<Form>FlapJurnalTransaksi</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapBukuBesar.pas">
+				<Form>FlapBukuBesar</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uTutupBuku.pas">
+				<Form>FtutupBUku</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uRedemPoin.pas">
+				<Form>FRedemPoin</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPemakainBarang.pas">
+				<Form>FdataPemakainBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uGantiJenisHarga.pas">
+				<Form>FGantiJenisHarga</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariPenjualan.pas">
+				<Form>FcariPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPelunasanHutang.pas">
+				<Form>FdataPelunasanHutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPelunasanPiutang.pas">
+				<Form>FdataPelunasanPiutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPivot.pas">
+				<Form>FlapPivot</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uBayar.pas">
+				<Form>Fbayar</Form>
+			</DCCReference>
+			<DCCReference Include="frm\UcatakLabel.pas">
+				<Form>FcetakLabel</Form>
+			</DCCReference>
+			<DCCReference Include="frm\Ubackup.pas">
+				<Form>Fbackupdatabase</Form>
+			</DCCReference>
+			<DCCReference Include="frm\UrestoreDatabase.pas">
+				<Form>FRestoreDatabase</Form>
+			</DCCReference>
+			<DCCReference Include="frm\usetHarga.pas">
+				<Form>FsetHargaDefault</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uTutupTahun.pas">
+				<Form>FtutupTahun</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCetakStokLimit.pas">
+				<Form>FcetakStokLimit</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPoPenjualan.pas">
+				<Form>FDataPoPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPoPenjualan.pas">
+				<Form>FpoPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputGiro.pas">
+				<Form>FinputGiro</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uHistoryHargaBarang.pas">
+				<Form>FhistoryHargaBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uExportExcel.pas">
+				<Form>FexportExcel</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uInputMasterEDC.pas">
+				<Form>FinputMasterEDC</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uMasterEDC.pas">
+				<Form>FmasterEDC</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uBayarEDC.pas">
+				<Form>FbayarEDC</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uRekapitulasiBarangTerjual.pas">
+				<Form>FrekapitulasiBarangTerjual</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPenjualan.pas">
+				<Form>FPenjualanBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uDataPenjualan.pas">
+				<Form>FdataPenjualan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uKartuStok.pas">
+				<Form>FkartuStok</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSupplier.pas">
+				<Form>FdataSupplier</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPemakainBarang.pas">
+				<Form>FpemakainBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uHistoryPoinPelanggan.pas">
+				<Form>FHistoryPoin</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uPembelian.pas">
+				<Form>FpembelianBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariPObeli.pas">
+				<Form>FcariPO</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uTutupKasir.pas">
+				<Form>FtutupKasir</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uImportKategori.pas">
+				<Form>FimportKategori</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uImportPelanggan.pas">
+				<Form>FimportDataPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uImportBarang.pas">
+				<Form>FimportBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uImportSupplier.pas">
+				<Form>FimportSupplier</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uResetData.pas">
+				<Form>FresetData</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uGantiBarcode.pas">
+				<Form>FBarcodeBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSetSaldoAwal.pas">
+				<Form>FSaldoAwal</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSetingHargaPelanggan.pas">
+				<Form>FSetingHargaPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSettingAkes.pas">
+				<Form>FsetingAkses</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCaripembelian.pas">
+				<Form>FcariPembelian</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uCariPembelianCabang.pas">
+				<Form>FCariPebembelianCabang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uAktivasi.pas">
+				<Form>FAktivasi</Form>
+			</DCCReference>
+			<DCCReference Include="ctrl\WbemScripting_TLB.pas"/>
+			<DCCReference Include="frm\uLaporanInOutBarang.pas">
+				<Form>FlaporanInoutBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uStokLimitPersupplier.pas">
+				<Form>FStokLimtiPerSupplier</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLaporanPenjualanPerKategori.pas">
+				<Form>FLapPenjualanKategori</Form>
+			</DCCReference>
+			<DCCReference Include="uSplash.pas">
+				<Form>Fsplash</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uInputQty.pas">
+				<Form>FinputQty</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uGantiKasir.pas">
+				<Form>FGantiKasir</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uLapMarginBarang.pas">
+				<Form>FLapMarginBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uNewLaporanPenjualan.pas">
+				<Form>FNewLaporanPenjualan</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPenjualanKasir.pas">
+				<Form>FLapPenjualanKasir</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPenjualanBarangPerSupplier.pas">
+				<Form>FLapPenjualanBarangPerSupplier</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uLapLabaPelanggan.pas">
+				<Form>FLaporanLabaPelanggan</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uLapProfitHarian.pas">
+				<Form>FLapProfitHarian</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uLapFrekuensiBarang.pas">
+				<Form>FLapFrekuensiBarang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapPenjualanBarangPelanggan.pas">
+				<Form>FLapPenjualanBarangPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapRekapitulasiPenjualanBarangPelanggan.pas">
+				<Form>FlapRekapitulasiBarangPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLaporanCigaretNonCigaret.pas">
+				<Form>FLaporanCigaretNonCigaret</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uGantiSales.pas">
+				<Form>FGantiSales</Form>
+			</DCCReference>
+			<DCCReference Include="frm\UlapPelanggan.pas">
+				<Form>FlapPelanggan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uMigration.pas">
+				<Form>FMigrationData</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\UBayarPiutang.pas">
+				<Form>FbayarPiutang</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uLapOmsetBulan.pas">
+				<Form>FLapOmsetBulan</Form>
+			</DCCReference>
+			<DCCReference Include="frm\uSetoranKasir.pas">
+				<Form>FSetoranKasir</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="frm\uPrintSetoranKasir.pas">
+				<Form>FPrintSetoranKasir</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="D:\Delphi Component\Fast Report 5\LibD16\dclfrxTee16.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcboffice2k160.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcbofficexp160.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+					<Source>
+						<Source Name="MainSource">ass.dpr</Source>
+					</Source>
+				</Delphi.Personality>
+				<Deployment Version="3"/>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<Import Condition="Exists('$(MSBuildProjectName).deployproj')" Project="$(MSBuildProjectName).deployproj"/>
+	</Project>

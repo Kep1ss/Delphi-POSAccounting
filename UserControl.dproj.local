@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/21 22:55:15.000.329,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 22:55:32.000.778,C:\Users\anaba\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\anaba\Documents\RAD Studio\Projects\UserControl.dproj</Transaction>
+    <Transaction>2021/02/21 22:56:05.000.531,C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.dfm=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\uSerControll.dfm</Transaction>
+    <Transaction>2021/02/21 22:56:05.000.531,C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\uSerControll.pas</Transaction>
+    <Transaction>2021/02/21 22:56:09.000.812,C:\Users\anaba\Documents\RAD Studio\Projects\UserControl.dproj=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\UserControl.dproj</Transaction>
+    <Transaction>2021/02/21 23:14:38.000.859,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\uEngine.pas</Transaction>
+    <Transaction>2021/02/21 23:14:38.000.817,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\uComCtrl.pas</Transaction>
+    <Transaction>2021/02/24 15:57:02.000.319,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\frm\uAktivasi.pas</Transaction>
+    <Transaction>2021/02/28 20:55:24.000.027,D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\uEngine.pas=</Transaction>
+    <Transaction>2021/02/28 20:55:34.000.810,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrls\uEngine.pas</Transaction>
+  </Transactions>
+</BorlandProject>

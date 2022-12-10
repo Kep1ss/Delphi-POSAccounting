@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.4.6" DotMatrixReport="False" EngineOptions.UseFileCache="True" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42013,0108178125" ReportOptions.Description.Text="" ReportOptions.LastChange="43483,6547929398" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." ShowProgress="False">
+  <Datasets>
+    <item DataSet="Fdetilbeli" DataSetName="FdetilBeli"/>
+    <item DataSet="frdPprofil" DataSetName="frdPprofil"/>
+    <item DataSet="LapPembelian" DataSetName="LapPembelian"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Black" Font.Style="1" Orientation="poLandscape" PaperWidth="265" PaperHeight="215,9" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="102,04731" Left="0" Top="18,89765" Width="925,98485">
+      <TfrxMemoView Name="Memo1" Left="0" Top="0" Width="978,89827" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Times New Roman" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Laporan Pembelian"/>
+      <TfrxMemoView Name="LapProfilnamaperusahaan" Left="0" Top="22,89765" Width="978,89827" Height="18,89765" DataSetName="LapProfil" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Times New Roman" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frdPprofil.&#34;nama&#34;]"/>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="80,5906" Width="910,86673" Height="0" Color="0" Frame.Style="fsDouble" Frame.Typ="4"/>
+      <TfrxMemoView Name="LapProfilalamat" Left="0" Top="41,57483" Width="978,89827" Height="18,89765" DataSetName="LapProfil" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frdPprofil.&#34;alamat&#34;],[frdPprofil.&#34;kota&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="LapProfiltelepon" Left="0" Top="57,91342" Width="978,89827" Height="18,89765" DataSetName="LapProfil" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Telp. [frdPprofil.&#34;notelepon&#34;], Fax. [frdPprofil.&#34;fax&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxReportTitle>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="19,67718" Left="0" Top="279,68522" Width="925,98485">
+      <TfrxMemoView Name="Memo4" Left="181,41744" Top="0,77953" Width="351,49629" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Width="1,5" ParentFont="False" Text="Nama Barang"/>
+      <TfrxMemoView Name="Memo6" Left="612,28386" Top="0,77953" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Width="1,5" HAlign="haCenter" ParentFont="False" Text="Harga"/>
+      <TfrxMemoView Name="Memo5" Left="532,91373" Top="0,77953" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Width="1,5" ParentFont="False" Text="Satuan"/>
+      <TfrxMemoView Name="Memo9" Left="687,87446" Top="0,77953" Width="109,60637" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Width="1,5" HAlign="haCenter" ParentFont="False" Text="Jumlah"/>
+      <TfrxMemoView Name="Memo14" Left="793,7013" Top="0,77952756" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Typ="2" HAlign="haCenter" ParentFont="False" Text="Subtotal"/>
+      <TfrxMemoView Name="Memo2" Left="3,77953" Top="0,77953" Width="181,41744" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Typ="1" ParentFont="False" Text=""/>
+    </TfrxHeader>
+    <TfrxFooter Name="Footer2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34,01577" Left="0" Top="222,99227" Width="925,98485">
+      <TfrxMemoView Name="Memo7" Left="3,77953" Top="0" Width="975,11874" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" Frame.Typ="4" Frame.Width="1,5" HAlign="haCenter" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo11" Left="3,77953" Top="0" Width="975,11874" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" Frame.Typ="4" Frame.Width="1,5" HAlign="haCenter" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo12" Left="3,77953" Top="3,77953" Width="888,18955" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Black" Font.Style="3" ParentFont="False" Text="Total Pembelian : "/>
+      <TfrxMemoView Name="Memo13" Left="411,96877" Top="3,77953" Width="502,67749" Height="30,23624" DisplayFormat.FormatStr="%2.0n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial Black" Font.Style="3" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;LapPembelian.&#34;total&#34;&#62;,MasterData2)]"/>
+    </TfrxFooter>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="181,41744" Width="925,98485" ColumnWidth="0" ColumnGap="0" DataSet="LapPembelian" DataSetName="LapPembelian" RowCount="0">
+      <TfrxMemoView Name="Memo17" Left="3,77953" Top="0" Width="910,86673" Height="18,89765" DataSet="LapPenjualan" DataSetName="lapPenjualan" Font.Charset="1" Font.Color="8421376" Font.Height="-13" Font.Name="Times New Roman" Font.Style="3" Frame.Typ="13" Fill.BackColor="12632256" ParentFont="False" Text="Faktur :[LapPembelian.&#34;nobukti&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="185,19697" Top="0" Width="143,62214" Height="18,89765" DataSet="LapPenjualan" DataSetName="lapPenjualan" Font.Charset="1" Font.Color="8421376" Font.Height="-13" Font.Name="Times New Roman" Font.Style="3" Frame.Typ="4" Fill.BackColor="12632256" ParentFont="False" Text="Tanggal : [LapPembelian.&#34;tglbeli&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="468,66172" Top="0" Width="230,55133" Height="18,89765" DataSet="LapPenjualan" DataSetName="lapPenjualan" Font.Charset="1" Font.Color="8421376" Font.Height="-13" Font.Name="Times New Roman" Font.Style="3" Frame.Typ="4" Fill.BackColor="12632256" ParentFont="False" Text="Supplier : [LapPembelian.&#34;namasupplier&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="740,78788" Top="0" Width="173,85838" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="8421376" Font.Height="-13" Font.Name="Times New Roman" Font.Style="3" Frame.Typ="6" Fill.BackColor="12632256" HAlign="haRight" ParentFont="False" Text="[LapPembelian.&#34;total&#34;]"/>
+      <TfrxMemoView Name="Memo21" Left="718,1107" Top="0" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="8421376" Font.Height="-13" Font.Name="Times New Roman" Font.Style="3" Frame.Typ="4" Fill.BackColor="12632256" HAlign="haRight" ParentFont="False" Text="Total :"/>
+      <TfrxMemoView Name="LapPembelianpembayaran" Left="328,81911" Top="0" Width="139,84261" Height="18,89765" DataSet="LapPembelian" DataSetName="LapPembelian" Font.Charset="1" Font.Color="8421376" Font.Height="-13" Font.Name="Times New Roman" Font.Style="3" ParentFont="False" Text="Pembayaran : [LapPembelian.&#34;pembayaran&#34;]"/>
+    </TfrxMasterData>
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="321,26005" Width="925,98485" ColumnWidth="0" ColumnGap="0" DataSet="Fdetilbeli" DataSetName="FdetilBeli" RowCount="0">
+      <TfrxMemoView Name="lapPenjualannamabarang" Left="181,41744" Top="0" Width="351,49629" Height="18,89765" DataField="namabarang" DataSet="Fdetilbeli" DataSetName="FdetilBeli" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[FdetilBeli.&#34;namabarang&#34;]"/>
+      <TfrxMemoView Name="lapPenjualansatuanjual" Left="532,91373" Top="0" Width="79,37013" Height="18,89765" DataField="satuan" DataSet="Fdetilbeli" DataSetName="FdetilBeli" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[FdetilBeli.&#34;satuan&#34;]"/>
+      <TfrxMemoView Name="lapPenjualanharga" Left="612,28386" Top="0" Width="71,81107" Height="18,89765" DataField="harga" DataSet="Fdetilbeli" DataSetName="FdetilBeli" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[FdetilBeli.&#34;harga&#34;]"/>
+      <TfrxMemoView Name="lapPenjualanjumlah" Left="684,09493" Top="0" Width="113,3859" Height="18,89765" DataField="jumlah" DataSet="Fdetilbeli" DataSetName="FdetilBeli" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[FdetilBeli.&#34;jumlah&#34;]"/>
+      <TfrxMemoView Name="lapPenjualansubtotal" Left="793,7013" Top="0" Width="120,94496" Height="18,89765" DataField="subtotal" DataSet="Fdetilbeli" DataSetName="FdetilBeli" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" Frame.Typ="2" HAlign="haRight" ParentFont="False" Text="[FdetilBeli.&#34;subtotal&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="3,77953" Top="0" Width="177,63791" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" Frame.Typ="1" ParentFont="False" Text=""/>
+    </TfrxDetailData>
+  </TfrxReportPage>
+</TfrxReport>

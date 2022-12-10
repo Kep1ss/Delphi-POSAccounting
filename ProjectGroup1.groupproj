@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{91701E2E-92C3-4B5D-977A-980FA1971028}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ass.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TokoManager.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="UserControl.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ass">
+			<MSBuild Projects="ass.dproj"/>
+		</Target>
+		<Target Name="ass:Clean">
+			<MSBuild Projects="ass.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ass:Make">
+			<MSBuild Projects="ass.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TokoManager">
+			<MSBuild Projects="TokoManager.dproj"/>
+		</Target>
+		<Target Name="TokoManager:Clean">
+			<MSBuild Projects="TokoManager.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TokoManager:Make">
+			<MSBuild Projects="TokoManager.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="UserControl">
+			<MSBuild Projects="UserControl.dproj"/>
+		</Target>
+		<Target Name="UserControl:Clean">
+			<MSBuild Projects="UserControl.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="UserControl:Make">
+			<MSBuild Projects="UserControl.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ass;TokoManager;UserControl"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ass:Clean;TokoManager:Clean;UserControl:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ass:Make;TokoManager:Make;UserControl:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

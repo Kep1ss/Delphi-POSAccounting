@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/04/08 20:59:23.000.858,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/04/09 06:47:22.000.610,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/24 16:24:56.000.905,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/01 12:12:45.000.057,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/01 12:15:54.000.870,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/02 20:56:43.000.109,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/07/22 13:58:52.000.951,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 21:40:46.000.616,=C:\Users\anaba\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 21:41:03.000.316,C:\Users\anaba\Documents\RAD Studio\Projects\TokoManager.dproj=C:\Users\anaba\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/02/21 21:42:00.000.484,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\uTokoManager.pas</Transaction>
+    <Transaction>2021/02/21 21:42:48.000.425,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\uEngine.pas</Transaction>
+    <Transaction>2021/02/21 21:43:13.000.655,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\uComCtrl.pas</Transaction>
+    <Transaction>2021/02/21 21:43:26.000.740,D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\TokoManager.dproj=C:\Users\anaba\Documents\RAD Studio\Projects\TokoManager.dproj</Transaction>
+    <Transaction>2021/02/22 11:09:33.000.764,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\uSettingAkes.pas</Transaction>
+    <Transaction>2021/02/24 06:05:08.000.332,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\Unit1.pas</Transaction>
+    <Transaction>2021/02/24 06:07:42.000.556,D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\Unit1.pas=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\frm\uAktivasi.pas</Transaction>
+    <Transaction>2021/02/24 06:07:42.000.556,D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\Unit1.dfm=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\frm\uAktivasi.dfm</Transaction>
+    <Transaction>2021/02/24 06:17:22.000.739,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\WbemScripting_TLB.pas</Transaction>
+    <Transaction>2021/02/24 06:21:38.000.630,D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\frm\uAktivasi.pas=</Transaction>
+    <Transaction>2021/02/28 20:48:43.000.042,D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrl\uEngine.pas=</Transaction>
+    <Transaction>2021/02/28 20:49:24.000.200,=D:\PROJECT DELPHI\Cashey V5 - POS General v.6.0.1 - Palembang\ctrls\uEngine.pas</Transaction>
+  </Transactions>
+</BorlandProject>

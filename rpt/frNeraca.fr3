@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.6.7" DotMatrixReport="False" EngineOptions.UseFileCache="True" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42897,9359898843" ReportOptions.Description.Text="" ReportOptions.LastChange="44136,8783165972" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." ShowProgress="False">
+  <Datasets>
+    <item DataSet="FrAkunActiva" DataSetName="FrAkunActiva"/>
+    <item DataSet="FrAkunPasiva" DataSetName="FrAkunPasiva"/>
+    <item DataSet="FrPasiva" DataSetName="FrPasiva"/>
+    <item DataSet="frProfil" DataSetName="frProfil"/>
+    <item DataSet="FrSubActiva" DataSetName="FrSubActiva"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" MirrorMargins="True" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" ResetPageNumbers="True" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="86,92919" Left="0" Top="18,89765" Width="740,409927">
+      <TfrxMemoView Name="Fprofilnamaperusahaan" AllowVectorExport="True" Left="0" Top="0" Width="672,75634" Height="18,89765" AutoWidth="True" DataSetName="Fprofil" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frProfil.&#34;nama&#34;]"/>
+      <TfrxMemoView Name="Fprofilalamat" AllowVectorExport="True" Left="0" Top="18,89765" Width="737,00835" Height="18,89765" DataSetName="Fprofil" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Style="fsDouble" Frame.Typ="8" ParentFont="False" Text="[frProfil.&#34;alamat&#34;] [frProfil.&#34;kota&#34;] Telp [frProfil.&#34;notelepon&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Ltanggal" Align="baCenter" AllowVectorExport="True" Left="322,9608385" Top="68,03154" Width="94,48825" Height="18,89765" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo6" Align="baCenter" AllowVectorExport="True" Left="251,1497685" Top="49,13389" Width="238,11039" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Style="fsDouble" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="Laporan Neraca"/>
+    </TfrxReportTitle>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="714,33117" Width="740,409927">
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="665,19728" Top="0" Width="75,5906" Height="18,89765" Frame.Typ="0" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Height="18,89765" Left="0" ParentFont="False" Top="154,96073" Width="740,409927">
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="0" Top="0" Width="400,63018" Height="18,89765" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="12" Fill.BackColor="8421504" ParentFont="False" Text="AKTIVA"/>
+      <TfrxSubreport Name="Subreport1" AllowVectorExport="True" Left="400,63018" Top="0" Width="94,48825" Height="18,89765" ShowHint="True" Visibility="3" Page="Page2" PrintOnParent="True"/>
+    </TfrxHeader>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="245,66945" Left="0" Top="317,48052" Width="740,409927">
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="0" Top="211,65368" Width="400,63018" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="12" Fill.BackColor="42107" ParentFont="False" Text="SALDO AKTIVA"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="192,75603" Top="211,65368" Width="192,75603" Height="18,89765" AutoWidth="True" DataSet="FrAkunActiva" DataSetName="FrAkunActiva" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;FrAkunActiva.&#34;saldoakhir&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="400,63018" Top="211,65368" Width="362,83488" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="12" Fill.BackColor="42107" ParentFont="False" Text="SALDO PASIVA"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="559,37044" Top="211,65368" Width="192,75603" Height="18,89765" AutoWidth="True" DataSet="FrAkunActiva" DataSetName="FrAkunActiva" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;FrAkunPasiva.&#34;saldoakhir&#34;&#62;,MasterData2)]"/>
+    </TfrxReportSummary>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="264,5671" Width="740,409927" ColumnWidth="0" ColumnGap="0" DataSet="FrAkunActiva" DataSetName="FrAkunActiva" RowCount="0">
+      <TfrxMemoView Name="FrAkunActivanamaakun" AllowVectorExport="True" Left="86,92919" Top="3,77953" Width="200,31509" Height="18,89765" DataField="namaakunperkiraan" DataSet="FrAkunActiva" DataSetName="FrAkunActiva" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[FrAkunActiva.&#34;namaakunperkiraan&#34;]"/>
+      <TfrxMemoView Name="FrAkunActivaakun" AllowVectorExport="True" Left="18,89765" Top="3,77953" Width="207,87415" Height="18,89765" AutoWidth="True" DataField="kodeakunperkiraan" DataSet="FrAkunActiva" DataSetName="FrAkunActiva" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[FrAkunActiva.&#34;kodeakunperkiraan&#34;]"/>
+      <TfrxMemoView Name="FrAkunActivas_akhir" AllowVectorExport="True" Left="188,9765" Top="3,77953" Width="192,75603" Height="18,89765" AutoWidth="True" DataField="saldoakhir" DataSet="FrAkunActiva" DataSetName="FrAkunActiva" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[FrAkunActiva.&#34;saldoakhir&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="219,21274" Width="740,409927" Condition="FrAkunActiva.&#34;akunsubmaster&#34;">
+      <TfrxMemoView Name="Memo10" AllowVectorExport="True" Left="1,77953" Top="2" Width="241,88992" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[FrAkunActiva.&#34;namasubmaster&#34;]"/>
+    </TfrxGroupHeader>
+  </TfrxReportPage>
+  <TfrxReportPage Name="Page2" Visible="False" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" MirrorMargins="True" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" PrintIfEmpty="False" ShowTitleOnPreviousPage="False" TitleBeforeHeader="False" HGuides.Text="" VGuides.Text="">
+    <TfrxHeader Name="Header2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Height="18,89765" Left="0" ParentFont="False" Top="18,89765" Width="740,409927">
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="0" Top="0" Width="362,83488" Height="18,89765" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="12" Fill.BackColor="8421504" ParentFont="False" Text="PASIVA"/>
+    </TfrxHeader>
+    <TfrxReportSummary Name="ReportSummary2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18,89765" Left="0" Top="291,02381" Width="740,409927"/>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="166,29932" Width="740,409927" ColumnWidth="0" ColumnGap="0" DataSet="FrAkunPasiva" DataSetName="FrAkunPasiva" RowCount="0">
+      <TfrxMemoView Name="FrAkunPasivaakun" AllowVectorExport="True" Left="22,67718" Top="3,77953" Width="200,31509" Height="18,89765" DataField="kodeakunperkiraan" DataSet="FrAkunPasiva" DataSetName="FrAkunPasiva" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[FrAkunPasiva.&#34;kodeakunperkiraan&#34;]"/>
+      <TfrxMemoView Name="FrAkunPasivanamaakun" AllowVectorExport="True" Left="71,81107" Top="3,77953" Width="219,21274" Height="18,89765" DataField="namaakunperkiraan" DataSet="FrAkunPasiva" DataSetName="FrAkunPasiva" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[FrAkunPasiva.&#34;namaakunperkiraan&#34;]"/>
+      <TfrxMemoView Name="FrAkunPasivas_akhir" AllowVectorExport="True" Left="200,31509" Top="3,77953" Width="151,1812" Height="18,89765" AutoWidth="True" DataField="saldoakhir" DataSet="FrAkunPasiva" DataSetName="FrAkunPasiva" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[FrAkunPasiva.&#34;saldoakhir&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="120,94496" Width="740,409927" Condition="FrAkunPasiva.&#34;akunsubmaster&#34;">
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="3,77953" Top="0,77953" Width="272,12616" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[FrAkunPasiva.&#34;namasubmaster&#34;]"/>
+    </TfrxGroupHeader>
+  </TfrxReportPage>
+</TfrxReport>
