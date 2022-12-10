@@ -3,15 +3,17 @@ This is a sales system application that already has an accounting module
 
 This application build with delphi EXE2. PPIC application is used to monitor the production process of furniture factories. from the process of customer orders, creation of gantt charts, work planning, and input of production results
 
-[Requirement] Delphi Alexandria 10.4
-TMSVCLComponent
-DevExpressComponent
-Fastreort 5.0
-Database MySQL
+[Requirement] 
+Delphi Alexandria 10.4</br>
+TMSVCLComponent</br>
+DevExpressComponent</br>
+Fastreort 5.0</br>
+Database MySQL</br>
 
-[Install] Import Database Adiwraksa from folder DB.
-Setting Config.ini file in folder Program
-Compile Project Adw
+[Install] 
+Import Database Adiwraksa from folder DB.</br>
+Setting Config.ini file in folder Program</br>
+Compile Project Adw</br>
 
 [Run] Run the ass.exe application
 
